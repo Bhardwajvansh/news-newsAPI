@@ -1,14 +1,14 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const Navbar = () => {
   return (
-    <div>
+    <div style={{position:"sticky" , top:"0" , zIndex:"100"}}>
       <nav
         style={{ paddingLeft: "100px" }}
         className="navbar navbar-expand-lg bg-light"
       >
         <div className="container-fluid">
-          <a className="navbar-brand fs-2 text">NEWS</a>
+          <Link className="navbar-brand fs-2 text">NEWS</Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,39 +23,39 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link  className="nav-link active"  to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link  className="nav-link active"  to="/business">
                   Business
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link  className="nav-link active"  to="/entertainment">
                   Entertainment
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  health
-                </a>
+                <Link   className="nav-link active"  to="/health">
+                  Health
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  science
-                </a>
+                <Link  className="nav-link active"   to="/science">
+                  Science
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  sports
-                </a>
+                <Link  className="nav-link active"  to="/sports">
+                  Sports
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  technology
-                </a>
+                <Link  className="nav-link active"  to="technology">
+                  Technology
+                </Link>
               </li>
             </ul>
           </div>
